@@ -1,0 +1,247 @@
+html {
+  font-size: 10px; 
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgba(23, 52, 65, 0.9);
+  width: 100%;
+}
+
+body {
+  margin: 30px 10%;
+  background-color: rgba(248, 253, 254, 0.25);
+  padding: 0 0 20px 0;
+  border: 2px solid white;
+  border-radius: 20px;
+  box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.5);
+ 
+}
+
+
+/* Aici incepe titlul si poza*/
+
+h1 {
+  
+  font-size:30px;
+  margin: 15px 50px 0 0;
+  padding: 15px;    
+  color: #ffffff;
+  background-color: #333333;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.titlu {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  background-color: rgba( 500, 500, 500, 0.5);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.poza{
+  padding-left: 50%;
+  padding-right: 10px;
+  margin-top: 15px;
+}
+
+.poza img {
+  border-top-right-radius:50%; 
+  border-top-left-radius:50%;
+  border-bottom-right-radius:50%;
+  border-bottom-left-radius:50%;
+  border:2px solid #333333;
+}
+ @media screen and (max-width: 1200px) {
+    .poza{
+  padding-left: 10%;
+  
+}
+  h1 {
+  margin: 15px -30px 50px 0;
+  padding: 15px;    
+}
+  }
+  @media screen and (max-width: 700px) {
+    .poza{
+  padding-left: 10%;
+  margin-bottom: 45px;
+}
+  h1 {
+  font-size: 25px;
+
+  margin: 15px -30px 50px 0;
+  padding: 15px;    
+}
+  }
+/* Aici se termina titlul si poza */
+
+
+/* Aici incepe bara de navigare-ul*/
+
+.lista ul {
+    list-style-type: none;
+    padding: 1px;
+    overflow: hidden;
+    background-color: #333333;
+    margin-top: -30px;
+  }
+
+  .lista li {
+    float: left;
+  }
+
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .lista li a:hover, .dropdown:hover .dropbtn {
+    background-color: #111111;
+    border-radius: 2px;
+  }
+
+  .dropdown {
+    display: inline-block;
+  }
+
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #aaa;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+
+  .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;  
+  }
+
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+
+  .activ {
+      background-color: #aaa;
+      border-radius: 2px;
+  }
+
+/* Aici se termina bara de navigare*/
+
+
+.continut {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: space-around;
+  }
+
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 550px) {
+.continut {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 10px;
+  }
+}
+
+
+/* Aici incepe footer-ul */
+
+
+  .sectiune {
+    display: flex !important;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    background-color: #333333;
+    text-align: center;
+
+  }
+
+  .sectiune .scrisst {
+    width: 33.3%;
+    font-size: 15px;
+    padding: 0 0 0 1%;
+    color: #f3f3f3;
+
+  }
+
+  .sectiune .logo {
+    padding-top: 1.5%; 
+    width: 33.3%;
+    color: white;
+  }
+
+  .logo a {
+    color: white;
+    opacity: 0.5;
+    padding-left: 7.5px;
+    font-size: 25px;
+  }
+
+  .logo a:hover {
+    opacity: 1;
+  }
+
+  .sectiune .scrisdr {
+    width: 33.3%;
+    font-size: 15px;
+    padding: 0 1% 0 0;
+    color: #f3f3f3;
+  }
+
+  .textst {
+    text-align: left;
+  }
+
+  .textdr {
+    text-align: right;
+  }
+
+
+  @media screen and (max-width: 550px) {
+    .sectiune .logo {
+    padding-top: 3%;
+  }
+    .logo a {
+      font-size: 15px;
+    }
+    .sectiune p  {
+      font-size: 10px;
+      margin: 0 4px;
+    }
+  }
+  /* Aici se termina footer-ul*/
